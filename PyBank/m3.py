@@ -15,10 +15,10 @@ profits_losses = [int(i) for i in pandf]
 
 
 
-
+'''
 print("""
 Financial Analysis
 ----------------------------------------
 """)
 print(f'Total Months: {len(months)}')
-print(f'Total: ${sum(profits_losses)}')
+print(f'Total: ${sum(profits_losses)}')'''
