@@ -13,7 +13,15 @@ for row in csv:
 
 profits_losses = [int(i) for i in pandf] 
 
+def percentChange(startPoint,currentPoint):
+    return((float(currentPoint)-startPoint)/abs(startPoint))*100.00
+for eachN in profits_losses:
+    pc = percentChange(profits_losses[0], eachN)
+    print(pc)
 
+
+# $-2315.12
+#print(average_diff)
 
 '''
 print("""
