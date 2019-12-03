@@ -1,7 +1,7 @@
 import os
 import csv
 
-f = open(r'C:\My-Repo\python-challenge\PyBank\budget_data.csv')
+f = open(r'C:\My-Repo\python-challenge\python-challenge\PyBank\budget_data.csv')
 csv = csv.reader(f)
 csv_header = next(csv)
 months = []
@@ -12,4 +12,5 @@ for row in csv:
    
 f.close()
 
-print(len(months))
+
+print(profits_losses)
