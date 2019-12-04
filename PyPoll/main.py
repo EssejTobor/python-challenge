@@ -1,7 +1,7 @@
 import os
 import csv
 
-f = open(r'C:\My-Repo\python-challenge\python-challenge\PyPoll\election_data.csv')
+f = open('election_data.csv')
 csv = csv.reader(f)
 
 header = next(csv)
@@ -50,7 +50,7 @@ print("--------------------------")
 
 
 # Specify the file to write to
-output_path = os.path.join(r"C:\My-Repo\Election-Results.txt")
+output_path = os.path.join('Election-Results.txt')
 
 with open(output_path,"w") as file:
 
