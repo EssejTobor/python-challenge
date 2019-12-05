@@ -2,8 +2,12 @@
 import os
 import csv
 
+# You must change the path names below in the read and write to point to the directory on your local machine where this script file is stored.
+# example: 'C:\My-Repo\python-challenge\python-challenge\PyBank\input-or-output-file-name-and-extention'  
+                               
+
 # Data to read in and analyze
-f = open('budget_data.csv')
+f = open(r'C:\My-Repo\python-challenge\python-challenge\PyBank\budget_data.csv')
 csv = csv.reader(f)
 csv_header = next(csv)
 
@@ -38,7 +42,10 @@ print(f'Greatest Increase in Profits: {str(months[average_change.index(max(avera
 print(f'Greatest Decrease in Profits: {str(months[average_change.index(min(average_change))+1])} $ {str(greatest_decrease)}')
 
 
-output_path = os.path.join('Financial-Analysis.txt')
+
+
+# Specify output path
+output_path = os.path.join(r'C:\My-Repo\python-challenge\python-challenge\PyBank\Financial-Analysis.txt')
 
 with open(output_path,"w") as file:
     file.write("""

@@ -1,7 +1,11 @@
 import os
 import csv
 
-f = open('election_data.csv')
+# You must change the path names below in the read and write to point to the directory on your local machine where this script file is stored.
+# example: 'C:\My-Repo\python-challenge\python-challenge\PyPoll\input-or-output-file-name-and-extention'  
+                               
+
+f = open(r'C:\My-Repo\python-challenge\python-challenge\PyPoll\election_data.csv')
 csv = csv.reader(f)
 
 header = next(csv)
@@ -49,9 +53,9 @@ print(" Winner: " + key)
 print("--------------------------")
 
 
-# Specify the file to write to
-output_path = os.path.join('Election-Results.txt')
+# Specify the file and location to write to
 
+output_path = os.path.join(r'C:\My-Repo\python-challenge\python-challenge\PyPoll\Election-Results.txt')
 with open(output_path,"w") as file:
 
  
