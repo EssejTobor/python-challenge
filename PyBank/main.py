@@ -2,13 +2,20 @@
 import os
 import csv
 
-# You must change the path names below in the read and write to point to the directory on your local machine where this script file is stored.
-# example: 'C:\My-Repo\python-challenge\python-challenge\PyBank\input-or-output-file-name-and-extention'  
-                               
+
 
 # Data to read in and analyze
 f = open(r'C:\My-Repo\python-challenge\python-challenge\PyBank\budget_data.csv')
 csv = csv.reader(f)
+csv_header = next(csv)
+
+# csvpath = os.path.join('budget_data.csv')
+
+
+# with open(csvpath, newline="") as csvfile:
+#     csv = csv.reader(csvfile, delimiter=',')
+
+
 csv_header = next(csv)
 
 # Stored Variables

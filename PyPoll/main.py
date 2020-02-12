@@ -1,12 +1,17 @@
 import os
-import csv
+import csv 
 
-# You must change the path names below in the read and write to point to the directory on your local machine where this script file is stored.
-# example: 'C:\My-Repo\python-challenge\python-challenge\PyPoll\input-or-output-file-name-and-extention'  
-                               
 
-f = open(r'C:\My-Repo\python-challenge\python-challenge\PyPoll\election_data.csv')
-csv = csv.reader(f)
+
+
+# f = open(r'C:\My-Repo\python-challenge\python-challenge\PyPoll\election_data.csv')
+# csv = csv.reader(f)
+csvpath = os.path.join("election_data.csv")
+
+
+with open(csvpath, newline="") as csvfile:
+    csv = csv.reader(csvfile, delimiter=',')
+
 
 header = next(csv)
 votes = 0
