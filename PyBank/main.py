@@ -4,16 +4,16 @@ import csv
 
 
 
-# Data to read in and analyze
-f = open(r'C:\My-Repo\python-challenge\python-challenge\PyBank\budget_data.csv')
-csv = csv.reader(f)
-csv_header = next(csv)
+# # Data to read in and analyze
+# f = open(r'C:\My-Repo\python-challenge\python-challenge\PyBank\budget_data.csv')
+# csv = csv.reader(f)
+# csv_header = next(csv)
 
-# csvpath = os.path.join('budget_data.csv')
+csvpath = os.path.join('budget_data.csv')
 
 
-# with open(csvpath, newline="") as csvfile:
-#     csv = csv.reader(csvfile, delimiter=',')
+with open(csvpath, newline="") as csvfile:
+    csv = csv.reader(csvfile, delimiter=',')
 
 
 csv_header = next(csv)
